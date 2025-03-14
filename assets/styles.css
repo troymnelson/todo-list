@@ -24,7 +24,7 @@ main {
   position: flex;
   place-items: center;
   height: 33%;
-  width: 33%;
+  width: 15%;
   border-radius: 10%;
   color: var(--text-color);
 }
@@ -33,7 +33,9 @@ button {
   text-decoration: none;
   color: var(--text-color);
   background-color: var(--main-color);
-  border: none;
+  border: 1px solid black;
+  padding: .5em;
+  border-radius: 10px;
 }
 
 button:hover {
@@ -44,9 +46,9 @@ button:hover {
 
 ul {
   list-style: none;
-  display: grid;
-  grid-template-areas: "in in in" "task edit delete";
-  grid-template-columns: auto;
-  grid-template-rows: auto;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+
 }
 
